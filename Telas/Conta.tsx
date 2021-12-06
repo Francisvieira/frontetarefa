@@ -2,20 +2,43 @@ import * as React from "react";
 import { View , Text, Image} from "react-native";
 import { servidor } from "../config/path";
 import { styles } from '../css/Styles'; 
-
+import { StatusBar } from "expo-status-bar";
 export default function Conta({navigation})
 
 {
     return(
+        <View style={styles.container2}>
+        <View style={styles.topo}>
         <View>
-            
-            <Text style={styles.txtcard}> Meu Cartão </Text>
-            <Image source={{uri:"https://w7.pngwing.com/pngs/530/543/png-transparent-computer-icons-x-mark-check-mark-symbol.png"}}style={styles.imgicone} />;
+            <Text style={styles.titulo}> Cartão</Text>
         </View>
+        <Image source={{uri:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/More_Icon_C.svg/1200px-More_Icon_C.svg.png"}} style={styles.mais}></Image>
+        </View> 
+        
+        <View>
+            <Image source={{uri:"https://www.foregon.com/x/foregon-front/products/cartao-de-credito-nubank-mastercard.png"}}style={styles.cartao}></Image>
+        </View>
+
+        <View style={styles.subtitulo}>
+            <Text style={styles.txtsub}>Transações Recentes</Text>
+        </View>
+
+        <View style={styles.caixa}>
+            <Text style={styles.kfc}>KFC</Text>
+            <Image source={require("../assets/hamb.png")} style={styles.hamb}/>
+        </View>
+
+
+
+
+        </View>
+
+        
+
+
+
     )
     
 }
-    <View>
-        <Image source={{uri:"https://www.foregon.com/x/foregon-front/products/cartao-de-credito-nubank-mastercard.png"}} style={styles.cartao}/>
-    </View>
+   
 
