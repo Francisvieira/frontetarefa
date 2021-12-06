@@ -1,7 +1,6 @@
 import * as React from "react";
 import { View , Text, Image} from "react-native";
-import { servidor } from "../config/path";
-import { styles } from '../css/Styles'; 
+import { styles } from "../css/Styles"
 import { StatusBar } from "expo-status-bar";
 export default function Conta({navigation})
 
