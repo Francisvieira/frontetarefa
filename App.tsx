@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer, StackActions } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from './Telas/Login';
-import Conta from './Telas/Conta'
+import Conta from './Telas/Conta';
 
 
 const Stack = createNativeStackNavigator();

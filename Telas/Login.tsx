@@ -1,7 +1,8 @@
 import * as React from 'react'
 import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native'
 import { styles } from '../css/Styles';
-
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 export default function Login({ navigation }) {
     const [usuario, setUsuario] = React.useState("");

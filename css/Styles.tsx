@@ -74,7 +74,7 @@ export const styles = StyleSheet.create({
         left: 10,
         color: 'white',
         top: 30,
-        fontWeight:"bold"
+        fontWeight: "bold"
 
 
     },
@@ -88,44 +88,84 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: 'black'
     },
-    cartao:{
-        top:70,
-        width:370,
-        height:250,
-        borderRadius:20,
-        
-    
+    cartao: {
+        top: 70,
+        width: 370,
+        height: 250,
+        borderRadius: 20,
+
+
     },
-    subtitulo:{
-        right:-40,
-        bottom:-100
+    subtitulo: {
+        right: -40,
+        bottom: -100
     },
-    txtsub:{
-        fontSize:30,
-        color:'white',
-        fontWeight:'bold'
+    txtsub: {
+        fontSize: 30,
+        color: 'white',
+        fontWeight: 'bold'
     },
-    caixa:{
-        backgroundColor:'grey',
-        height:100,
-        width:370,
-        borderRadius:30,
-        top:110,
-         
+    caixa: {
+        backgroundColor: 'white',
+        height: 100,
+        width: 370,
+        borderRadius: 30,
+        top: 110,
+
     },
-    kfc:{
-        fontSize:30,
-        left:100,
-        bottom:-30,
-        fontWeight:'bold'
+    kfc: {
+        fontSize: 30,
+        left: 100,
+        bottom: -30,
+        fontWeight: 'bold'
     },
-    hamb:{
-        width:50,
-        height:50,
-        top:-10,
-        left:5
-    
-    
+    hamb: {
+        width: 50,
+        height: 50,
+        top: -10,
+        left: 20
+
+
+    },
+    paypal: {
+        width: 100,
+        height: 100,
+        bottom: 30
+
+    },
+    caixa1: {
+
+        backgroundColor: 'white',
+        height: 100,
+        width: 370,
+        borderRadius: 30,
+        top: 120,
+    },
+    caixa2: {
+        backgroundColor: 'white',
+        height: 100,
+        width: 370,
+        borderRadius: 30,
+        bottom: -130,
+    },
+    mecanico: {
+        width: 50,
+        height: 50,
+        top: -10,
+        left: 10
+    },
+    mercado: {
+        width: 50,
+        height: 50,
+        top: -10,
+        left: 10
+    },
+    caixa3: {
+        backgroundColor: 'white',
+        height: 100,
+        width: 370,
+        borderRadius: 30,
+        bottom: -140,
     }
 
 })
