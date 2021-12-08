@@ -3,6 +3,12 @@ import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native'
 import { styles } from '../css/Styles';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { servidor } from '../config/path';
+
+let us = "";
+let se = "";
+let resultado: any = [];
+
 
 export default function Login({ navigation }) {
     const [usuario, setUsuario] = React.useState("");
@@ -16,7 +22,15 @@ export default function Login({ navigation }) {
                 <TextInput placeholder="Senha:" style={styles.input} placeholderTextColor={'white'} secureTextEntry value={senha} onChangeText={(value) => setSenha(value)} />
 
                 <TouchableOpacity style={styles.btnlogar} onPress={() => {
-                    navigation.navigate("Conta")
+
+                    us = usuario;
+                    se = senha;
+                    let retorno = efetuarLogin()
+
+                    if (retorno[0] == "logado") {
+                        navigation.navigate("Conta", { dados: retorno })
+                    }
+
                 }}
                 >
                     <Text style={styles.btnlogar}>Logar</Text>
@@ -26,5 +40,30 @@ export default function Login({ navigation }) {
     );
 }
 
-   
-                  
+function efetuarLogin() {
+    fetch(
+        `${servidor}/login`, {
+            method: "POST",
+            headers: {
+                accept: "application/json",
+                "content-type": "application/json"
+            },
+            body: JSON.stringify({
+                nome: us.toLowerCase(),
+                senha: se
+            })
+
+        }
+    )
+    .then((response) => response.json())
+    .then((rs) => {
+        console.log(rs);
+        resultado[0] = rs.output;
+        resultado[1] = rs.payload;
+        resultado[2] = rs.token;
+    })
+    .catch((erro) => console.error(`Erro ao tentar buscar a api ->${erro}`));
+return resultado;
+}
+
+
