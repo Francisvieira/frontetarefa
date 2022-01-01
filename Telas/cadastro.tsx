@@ -1,5 +1,5 @@
 import  * as React from "react";
-import { servidor } from "../config/path";
+import { servidor } from "../config/Path"
 import { View, Text, TextInput, TouchableOpacity } from 'react-native'
 import { Alert } from "react-native";
 import { styles } from '../css/Styles';

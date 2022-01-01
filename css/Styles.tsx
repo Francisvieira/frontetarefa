@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'white',
+        backgroundColor:"#fe8181",
 
 
 
@@ -26,14 +26,14 @@ export const styles = StyleSheet.create({
         width: '90%',
         padding: 10,
         margin: 20,
-        backgroundColor: "#519259",
+        backgroundColor: "transparent",
         borderRadius: 10,
         top: 20
     },
 
     input: {
         height: 40,
-        borderBottomColor: '#ddd',
+        borderBottomColor: 'black',
         borderBottomWidth: 1,
         padding: 5,
         marginBottom: 10,
@@ -43,8 +43,9 @@ export const styles = StyleSheet.create({
     btnlogar: {
         justifyContent: "center",
         right: -65,
-        color: 'white',
-        fontSize: 25
+        color: '#00ff83',
+        fontSize: 25,
+        fontWeight:"bold"
 
 
     },
@@ -166,6 +167,30 @@ export const styles = StyleSheet.create({
         width: 370,
         borderRadius: 30,
         bottom: -140,
+    }, 
+    btncad:{
+        height:50,
+        width:'50%',
+        backgroundColor:'black',
+        justifyContent:"center",
+        marginTop:30,
+        borderRadius:30,
+        
+    },
+    txtcad:{
+        
+        color:'#00ff83',
+        justifyContent:"center",
+        left:52,
+        fontWeight:'bold',
+        
+    },
+    txt:{
+        marginTop:20,
+        fontSize:14,
+        fontWeight:'bold',
+        color:'white'
+        
     }
 
 })

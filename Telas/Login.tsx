@@ -3,7 +3,8 @@ import { View, Text, Image, TextInput, TouchableOpacity } from 'react-native'
 import { styles } from '../css/Styles';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { servidor } from '../config/path';
+import { servidor } from '../config/Path';
+
 
 let us = "";
 let se = "";
@@ -36,6 +37,14 @@ export default function Login({ navigation }) {
                     <Text style={styles.btnlogar}>Logar</Text>
                 </TouchableOpacity>
             </View>
+
+    <View style={styles.btncad}>
+        <TouchableOpacity  onPress={()=>navigation.navigate('cadastro')}>
+            
+                <Text style={styles.txtcad}>Cadastre-se </Text>
+         </TouchableOpacity>
+    </View>
+                <Text style={styles.txt}>Não é cadastrado ainda?</Text>
         </View>
     );
 }
