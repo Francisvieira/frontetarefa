@@ -39,12 +39,12 @@ export default function Login({ navigation }) {
             </View>
 
     <View style={styles.btncad}>
-        <TouchableOpacity  onPress={()=>navigation.navigate('cadastro')}>
+        <TouchableOpacity  onPress={()=>navigation.navigate('Cadastro')}>
             
-                <Text style={styles.txtcad}>Cadastre-se </Text>
+                <Text  style={styles.txtcad}>Cadastre-se  </Text>
          </TouchableOpacity>
     </View>
-                <Text style={styles.txt}>Não é cadastrado ainda?</Text>
+                <Text  style={styles.txt}>Não é cadastrado ainda?</Text>
         </View>
     );
 }

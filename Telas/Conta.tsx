@@ -4,6 +4,7 @@ import { styles } from "../css/Styles"
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Scanner from "../src/components/Scanner";
 
 export default function Conta({navigation})
 
@@ -64,5 +65,6 @@ export default function Conta({navigation})
 
     
 }
+
    
 
